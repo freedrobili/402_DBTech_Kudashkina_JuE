@@ -1,0 +1,24 @@
+{
+    "name": "yuliya/hangman",
+    "autoload": {
+        "psr-4": {
+            "freedrobili\\hangman\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "freedrobili",
+            "email": "kudashkina-yuliya@mail.ru"
+        }
+    ],
+    "bin": [
+        "bin/hangman.php"
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.21"
+    }
+}
