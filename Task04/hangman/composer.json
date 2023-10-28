@@ -1,0 +1,23 @@
+{
+    "name": "freedrobili/hangman",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "freedrobili\\hangman\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Model.php"
+        ]
+    },
+    "bin": [
+        "bin/hangman.php"
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.21"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.7.2"
+    }
+}
