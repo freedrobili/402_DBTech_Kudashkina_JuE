@@ -1,0 +1,53 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Виселица</title>
+</head>
+<body>
+<header>
+    <div class="app-name">
+        <h2>Виселица</h2>
+    </div>
+</header>
+<main class="app">
+    <canvas id="canvas" class="canvas" width=500 height=500></canvas>
+    <section id="playerInit" class="player-init">
+        <div><label for="nameField">Ваше имя:</label></div>
+        <div><input type="text" id="nameField" name="name"></div>
+        <div><input type="button" id="nextInfo" value="Далее"></div>
+    </section>
+    <div class="info__block" id="infoBlock">
+        <p id="gameInfoText"></p>
+        <button id="nextShowGame">Далее</button>
+    </div>
+    <section class="show-game" id="showGame">
+        <label for="letterField">Ваша буква:</label>
+        <input type="text" id="letterField">
+        <input type="button" id="checkLetterBtn" value="Ответить">
+    </section>
+    <div class="message" id="gameMessage"></div>
+    <div class="result" id="gameResult">
+        <p id="resultText"></p>
+
+        <button id="playAgainBtn">Сыграть ещё раз</button>
+    </div>
+    <section class="gameList" id="gameList">
+        <div class="gameList-handler__block">
+            <input type="button" id="replayBtn" value="Повтор игры">
+            <input type="button" id="listGames" value="Список игр">
+        </div>
+        <div id="gameTableTitle" class="gameTable-title"></div>
+        <div>
+            <table border="1" id="table" class="app__table">
+            </table>
+        </div>
+    </section>
+</main>
+<script src="src/js/controller.js" type="module"></script>
+</body>
+</html> 
